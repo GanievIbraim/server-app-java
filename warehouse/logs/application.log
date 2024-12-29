@@ -1,0 +1,239 @@
+2024-12-26T19:47:25.887Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Starting WarehouseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/warehouse.jar started by root in /app)
+2024-12-26T19:47:25.891Z DEBUG 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T19:47:25.892Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T19:47:26.861Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T19:47:26.927Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2024-12-26T19:47:27.647Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T19:47:27.661Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T19:47:27.662Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T19:47:27.695Z  INFO 1 --- [warehouse] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T19:47:27.696Z  INFO 1 --- [warehouse] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1740 ms
+2024-12-26T19:47:28.028Z  INFO 1 --- [warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T19:47:28.089Z  INFO 1 --- [warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T19:47:28.135Z  INFO 1 --- [warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T19:47:28.407Z  INFO 1 --- [warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T19:47:28.444Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T19:47:28.679Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a44effb
+2024-12-26T19:47:28.682Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T19:47:28.725Z  WARN 1 --- [warehouse] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T19:47:28.746Z  INFO 1 --- [warehouse] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T19:47:29.505Z  INFO 1 --- [warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T19:47:29.599Z  INFO 1 --- [warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T19:47:30.006Z  WARN 1 --- [warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T19:47:30.822Z  INFO 1 --- [warehouse] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-26T19:47:30.936Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T19:47:30.955Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Started WarehouseApplication in 5.614 seconds (process running for 6.287)
+2024-12-26T19:47:43.454Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T19:47:43.458Z  INFO 1 --- [warehouse] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T19:47:43.462Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T19:47:43.465Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T19:47:43.471Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T19:47:52.451Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Starting WarehouseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/warehouse.jar started by root in /app)
+2024-12-26T19:47:52.455Z DEBUG 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T19:47:52.456Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T19:47:53.449Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T19:47:53.531Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2024-12-26T19:47:54.293Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T19:47:54.308Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T19:47:54.309Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T19:47:54.350Z  INFO 1 --- [warehouse] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T19:47:54.351Z  INFO 1 --- [warehouse] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1843 ms
+2024-12-26T19:47:54.692Z  INFO 1 --- [warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T19:47:54.746Z  INFO 1 --- [warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T19:47:54.790Z  INFO 1 --- [warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T19:47:55.068Z  INFO 1 --- [warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T19:47:55.106Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T19:47:55.324Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c41b8d8
+2024-12-26T19:47:55.326Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T19:47:55.356Z  WARN 1 --- [warehouse] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T19:47:55.380Z  INFO 1 --- [warehouse] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T19:47:56.262Z  INFO 1 --- [warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T19:47:56.325Z  INFO 1 --- [warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T19:47:56.715Z  WARN 1 --- [warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T19:47:57.494Z  INFO 1 --- [warehouse] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-26T19:47:57.574Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T19:47:57.588Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Started WarehouseApplication in 5.701 seconds (process running for 6.252)
+2024-12-26T19:50:05.939Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T19:50:05.939Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T19:50:05.941Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-26T19:50:06.078Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] com.example.warehouse.LoggingAspect      : Executed method ProductController.getAllProducts() in 101 ms
+2024-12-26T19:50:07.954Z  INFO 1 --- [warehouse] [http-nio-8080-exec-2] com.example.warehouse.LoggingAspect      : Executed method ProductController.createProduct(..) in 3 ms
+2024-12-26T19:50:09.981Z  INFO 1 --- [warehouse] [http-nio-8080-exec-3] com.example.warehouse.LoggingAspect      : Executed method ProductController.getAllProducts() in 3 ms
+2024-12-26T19:51:26.819Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T19:51:26.821Z  INFO 1 --- [warehouse] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T19:51:26.825Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T19:51:26.827Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T19:51:26.835Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T19:51:36.459Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Starting WarehouseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/warehouse.jar started by root in /app)
+2024-12-26T19:51:36.462Z DEBUG 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T19:51:36.464Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T19:51:37.651Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T19:51:37.723Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-12-26T19:51:38.440Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T19:51:38.457Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T19:51:38.459Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T19:51:38.492Z  INFO 1 --- [warehouse] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T19:51:38.492Z  INFO 1 --- [warehouse] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1964 ms
+2024-12-26T19:51:38.824Z  INFO 1 --- [warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T19:51:38.882Z  INFO 1 --- [warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T19:51:38.923Z  INFO 1 --- [warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T19:51:39.209Z  INFO 1 --- [warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T19:51:39.251Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T19:51:39.465Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a54c92e
+2024-12-26T19:51:39.467Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T19:51:39.503Z  WARN 1 --- [warehouse] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T19:51:39.524Z  INFO 1 --- [warehouse] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T19:51:40.392Z  INFO 1 --- [warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T19:51:40.459Z  INFO 1 --- [warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T19:51:40.862Z  WARN 1 --- [warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T19:51:41.693Z  INFO 1 --- [warehouse] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-26T19:51:41.781Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T19:51:41.797Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Started WarehouseApplication in 6.065 seconds (process running for 6.65)
+2024-12-26T19:53:17.725Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T19:53:17.725Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T19:53:17.727Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-26T19:53:17.859Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] com.example.warehouse.LoggingAspect      : Executed method ProductController.getAllProducts() in 93 ms
+2024-12-26T19:59:03.559Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T19:59:03.562Z  INFO 1 --- [warehouse] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T19:59:03.567Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T19:59:03.572Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T19:59:03.579Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T20:05:43.014Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Starting WarehouseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/warehouse.jar started by root in /app)
+2024-12-26T20:05:43.017Z DEBUG 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T20:05:43.018Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T20:05:44.042Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T20:05:44.116Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2024-12-26T20:05:44.993Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T20:05:45.009Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T20:05:45.010Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T20:05:45.052Z  INFO 1 --- [warehouse] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T20:05:45.053Z  INFO 1 --- [warehouse] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1979 ms
+2024-12-26T20:05:45.448Z  INFO 1 --- [warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T20:05:45.534Z  INFO 1 --- [warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T20:05:45.595Z  INFO 1 --- [warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T20:05:45.962Z  INFO 1 --- [warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T20:05:45.997Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T20:05:46.235Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ee2423
+2024-12-26T20:05:46.238Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T20:05:46.277Z  WARN 1 --- [warehouse] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T20:05:46.296Z  INFO 1 --- [warehouse] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T20:05:47.166Z  INFO 1 --- [warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T20:05:47.234Z  INFO 1 --- [warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T20:05:47.710Z  WARN 1 --- [warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T20:05:48.552Z  INFO 1 --- [warehouse] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-26T20:05:48.685Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T20:05:48.704Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Started WarehouseApplication in 6.335 seconds (process running for 7.216)
+2024-12-26T20:10:03.175Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T20:10:03.182Z  INFO 1 --- [warehouse] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T20:10:03.188Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T20:10:03.192Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T20:10:03.200Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T20:10:17.523Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Starting WarehouseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/warehouse.jar started by root in /app)
+2024-12-26T20:10:17.527Z DEBUG 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T20:10:17.528Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T20:10:18.778Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T20:10:18.859Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2024-12-26T20:10:19.803Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T20:10:19.820Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T20:10:19.820Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T20:10:19.859Z  INFO 1 --- [warehouse] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T20:10:19.860Z  INFO 1 --- [warehouse] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2266 ms
+2024-12-26T20:10:20.320Z  INFO 1 --- [warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T20:10:20.411Z  INFO 1 --- [warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T20:10:20.461Z  INFO 1 --- [warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T20:10:20.886Z  INFO 1 --- [warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T20:10:20.935Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T20:10:21.240Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1fb71788
+2024-12-26T20:10:21.243Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T20:10:21.276Z  WARN 1 --- [warehouse] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T20:10:21.297Z  INFO 1 --- [warehouse] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T20:10:22.156Z  INFO 1 --- [warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T20:10:22.221Z  INFO 1 --- [warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T20:10:22.691Z  WARN 1 --- [warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T20:10:23.792Z  INFO 1 --- [warehouse] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-26T20:10:23.890Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T20:10:23.909Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Started WarehouseApplication in 7.036 seconds (process running for 7.871)
+2024-12-26T20:10:57.271Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T20:10:57.271Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T20:10:57.273Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-26T20:11:49.017Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T20:11:49.020Z  INFO 1 --- [warehouse] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T20:11:49.025Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T20:11:49.028Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T20:11:49.038Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T20:12:05.631Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Starting WarehouseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/warehouse.jar started by root in /app)
+2024-12-26T20:12:05.636Z DEBUG 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T20:12:05.638Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T20:12:06.718Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T20:12:06.805Z  INFO 1 --- [warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2024-12-26T20:12:07.722Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T20:12:07.744Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T20:12:07.744Z  INFO 1 --- [warehouse] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T20:12:07.796Z  INFO 1 --- [warehouse] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T20:12:07.797Z  INFO 1 --- [warehouse] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2096 ms
+2024-12-26T20:12:08.273Z  INFO 1 --- [warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T20:12:08.345Z  INFO 1 --- [warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T20:12:08.404Z  INFO 1 --- [warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T20:12:08.760Z  INFO 1 --- [warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T20:12:08.812Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T20:12:09.093Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d32c1c7
+2024-12-26T20:12:09.097Z  INFO 1 --- [warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T20:12:09.152Z  WARN 1 --- [warehouse] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T20:12:09.194Z  INFO 1 --- [warehouse] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T20:12:10.223Z  INFO 1 --- [warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T20:12:10.292Z  INFO 1 --- [warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T20:12:10.790Z  WARN 1 --- [warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T20:12:11.808Z  INFO 1 --- [warehouse] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-26T20:12:11.921Z  INFO 1 --- [warehouse] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T20:12:11.945Z  INFO 1 --- [warehouse] [main] c.e.warehouse.WarehouseApplication       : Started WarehouseApplication in 7.456 seconds (process running for 8.494)
+2024-12-26T20:12:20.306Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T20:12:20.307Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T20:12:20.309Z  INFO 1 --- [warehouse] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-26T20:12:27.634Z  INFO 1 --- [warehouse] [http-nio-8080-exec-2] com.example.warehouse.LoggingAspect      : Executed method ProductController.getAllProducts() in 91 ms
+2024-12-26T20:25:09.283Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T20:25:09.287Z  INFO 1 --- [warehouse] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T20:25:09.293Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T20:25:09.298Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T20:25:09.305Z  INFO 1 --- [warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
